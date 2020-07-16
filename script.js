@@ -1,6 +1,7 @@
 const product1 = 15.678;
 const product2 = 123.965;
 const product3 = 90.2345;
+const Bank = 500;
 
 const Pricelist = [product1, product2, product3];
 console.log('Products Price:' + Pricelist);
@@ -12,12 +13,12 @@ console.log('Min Price:' + PriceMin);
 const Sum = product1 + product2 + product3;
 console.log('Total:' + Sum);
 const NewSum = Math.floor(product1) + Math.floor(product2) + Math.floor(product3);
-console.log('New Price' + NewSum)
+console.log('New Price: ' + NewSum)
 
 const NewSumBoolean = Math.floor(NewSum) % 2 ? false : true;
 console.log("Boolean? " + NewSumBoolean);
 
-const rest = 500 - NewSum;
+const rest = Bank - Sum;
 console.log ('Rest: ' + rest);
 
 const MedianSum = (Sum / 3).toFixed(2);
