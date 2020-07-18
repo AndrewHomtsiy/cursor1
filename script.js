@@ -1,19 +1,22 @@
-const product1 = 15.678;
-const product2 = 123.965;
-const product3 = 90.2345;
-const Bank = 500;
+let product1 = 15.678;
+let product2 = 123.965;
+let product3 = 90.2345;
+let Bank = 500;
 
-const Pricelist = [product1, product2, product3];
-console.log('Products Price:' + Pricelist);
+const priceList = [product1, product2, product3];
+console.log('Products Price:' + priceList);
 
-const PriceMax = Math.max(...Pricelist);
+const PriceMax = Math.max(...priceList);
 console.log('Max Price:' + PriceMax);
-const PriceMin = Math.min(...Pricelist);
+const PriceMin = Math.min(...priceList);
 console.log('Min Price:' + PriceMin);
 const Sum = product1 + product2 + product3;
 console.log('Total:' + Sum);
 const NewSum = Math.floor(product1) + Math.floor(product2) + Math.floor(product3);
 console.log('New Price: ' + NewSum)
+
+const newRoundSum = (Math.round(NewSum/100))*100 ;
+document.writeln("Rounded to hundreds: " + newRoundSum); 
 
 const NewSumBoolean = Math.floor(NewSum) % 2 ? false : true;
 console.log("Boolean? " + NewSumBoolean);
