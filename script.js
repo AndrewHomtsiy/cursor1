@@ -15,7 +15,7 @@ console.log('Total:' + Sum);
 const newSum = Math.floor(PRODUCT_1) + Math.floor(PRODUCT_2) + Math.floor(PRODUCT_3);
 console.log('New Price: ' + newSum)
 
-const newRoundSum = (Math.round(newSum/100))*100 ;
+const newRoundSum = (Math.ceil(newSum/100))*100 ;
 document.writeln("Rounded to hundreds: " + newRoundSum); 
 
 const newSumBoolean = Math.floor(NewSum) % 2 ? false : true;
