@@ -10,7 +10,7 @@ const PriceMax = Math.max(...priceList);
 console.log('Max Price:' + PriceMax);
 const PriceMin = Math.min(...priceList);
 console.log('Min Price:' + PriceMin);
-const Sum = product1 + product2 + product3;
+const Sum = PRODUCT_1 + PRODUCT_2 + PRODUCT_3;
 console.log('Total:' + Sum);
 const newSum = Math.floor(PRODUCT_1) + Math.floor(PRODUCT_2) + Math.floor(PRODUCT_3);
 console.log('New Price: ' + newSum)
