@@ -18,7 +18,7 @@ console.log('New Price: ' + newSum)
 const newRoundSum = (Math.ceil(newSum/100))*100 ;
 document.writeln("Rounded to hundreds: " + newRoundSum); 
 
-const newSumBoolean = Math.floor(NewSum) % 2 ? false : true;
+const newSumBoolean = Math.floor(newSum) % 2 ? false : true;
 console.log("Boolean? " + newSumBoolean);
 
 const rest = Bank - Sum;
